@@ -1,1 +1,1 @@
-just trying to push git 
+My first webpage. For educational and personal use.
