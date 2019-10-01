@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yay!</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'welcome/bootstrap/bootstrap/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'welcome/style.css' %}">
+        <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+        <?php include_once("index.html"); ?>
+    </head>
+
+    <body>  
+        <header class="container-fluid">
+            <h1 class="title">Hola, Amigo!</h1> 
+        </header>  
+
+        <div class="row">
+            <div class="col-sm-8">
+                <main>
+                    <h2 class="title">About me</h2>
+                    <article id="text">
+                        A newcomer to the intricate world of everchanging technology.
+                        Currently studying the basics of businesses and web design.
+                        This page is made for educational purposes and personal use (hopefully).
+                    </article>
+                    <br>
+                    <h2 class="title">More features in the plans!</h2>
+                    <ul class="list-group">
+                        <li>Actual content</li>
+                        <li>Better design</li>
+                        <li>Publicity links</li>
+                        <li>Video</li>
+                        <li>Actual Patreon page</li>
+                    </ul>
+                    <br>
+                    <h3 class="title">Check out this nonexistent video too:</h3>
+                </main>
+
+                <article class="videobox"> 
+                    <img src="{% static 'welcome/vid.png' %}" alt="video">
+                </article>
+            </div>
+    
+            <div class="col-sm-4">
+                <section>
+                    <h2 class="inner">Bob Fernando </h2>
+                    <img  class="profilepic" src="{% static 'welcome/me2.jpg' %}" alt="my pic" >
+                    <article id="desc" class="inner">
+                    Occupation : Student at Fasilkom UI (2018~) <br><br>
+                    SID : 1806235675 <br><br>
+                    Hobby : Researching, reading, observing nature <br>
+                    </article>
+                    <img class="sosmedimg" src="{% static 'welcome/sosmed2.png' %}" alt="social-media">
+                </section>
+            </div>
+        </div>
+
+        <h4 class="title">Also:</h4>
+        <footer class="container-fluid">
+            <img class="footerimg" src="{% static 'welcome/footer.jpg' %}" alt="footer">
+        </footer>
+
+    </body>
+
+</html>
